@@ -1,9 +1,9 @@
 
-//*** ERC-725 ***//
+//*** ERC-721 ***//
 
 /* EIP-721: ERC-721 Non-Fungible Token Standard:
    
-   ERC725 standard was implemented in 2018-01-24 
+   ERC721 standard was implemented in 2018-01-24 
    by 	William Entriken, Dieter Shirley, Jacob Evans, Nastassia Sachs
    https://eips.ethereum.org/EIPS/eip-721
    *EIP stands for "Ethereum Improvement Proposals"
@@ -15,7 +15,7 @@
    from wallets to decentralized exchanges.
 */
 
-//*** Example of NFT on ERC-725 (Cryptokitties) ***//
+//*** Example of NFT on ERC-721 (Cryptokitties) ***//
 // Note: The below is the not the whole contract of Cryptokitties.
 
 pragma solidity ^0.8.0;
