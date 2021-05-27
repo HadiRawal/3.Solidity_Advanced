@@ -1,0 +1,40 @@
+//*** OpenZeppelin ***// 
+
+/* What is OpenZeppelin:
+   It is an open-source library which has The standard for secure blockchain applications
+   OpenZeppelin provides security products to build, automate, and operate decentralized applications. 
+   We also protect leading organizations by performing security audits on their systems and products.
+   Website: https://openzeppelin.com/ 
+   Github: https://github.com/OpenZeppelin 
+
+   OpenZepplein - Contracts:
+   It helps to Build Secure Smart Contracts in Solidity
+   and to Reduce the risk of vulnerabilities in your applications by using standard, tested, community-reviewed code.
+   OpenZeppelin Contracts helps you minimize risk by using battle-tested libraries of smart contracts 
+   for Ethereum and other blockchains. It includes the most used implementations of ERC standards.
+   https://openzeppelin.com/contracts/
+   
+   Explore OpenZepplein code:
+   on https://github.com/openzeppelin/openzeppelin-contracts 
+   
+   Contracts:
+   on https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts
+
+   Token:
+   on https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token
+   It includes ERC20, ERC721, ERC1155, ERC777
+   ERC20    https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20
+   ERC721   https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC721
+   ERC1155  https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC1155
+   ERC777   https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC777
+
+   Utils:
+   on https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/utils
+
+   OpenZepplein Decomentation:
+   on https://docs.openzeppelin.com/contracts/4.x/ 
+
+
+
+
+*/
