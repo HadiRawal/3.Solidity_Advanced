@@ -1,0 +1,96 @@
+//*** Truffle ***// 
+
+/* Truffle Overview:
+    A world class development environment, testing framework and asset pipeline for blockchains 
+    using the Ethereum Virtual Machine (EVM), aiming to make life as a developer easier. 
+    With Truffle, you get:
+      1. Built-in smart contract compilation, linking, deployment and binary management.
+      2. Automated contract testing for rapid development.
+      3. Scriptable, extensible deployment & migrations framework.
+      4. Network management for deploying to any number of public & private networks.
+      5. Package management with EthPM & NPM, using the ERC190 standard.
+      6. Interactive console for direct contract communication.
+      7. Configurable build pipeline with support for tight integration.
+      8. External script runner that executes scripts within a Truffle environment.
+      Website: https://www.trufflesuite.com/ 
+      Github: https://github.com/trufflesuite/truffle
+
+
+   Installation:
+      Requirements
+         NodeJS v8.9.4 or later
+         Windows, Linux or Mac OS X
+         Website: https://www.trufflesuite.com/docs/truffle/getting-started/installation
+      Run on Terminal:
+         npm install -g truffle
+
+   Initiating our first project:
+      https://www.trufflesuite.com/docs/truffle/getting-started/creating-a-project 
+      1.Create the project folder
+         on terminal >> "mkdir helloworld"
+      2.Enter that folder
+         on terminal >> "cd helloworld"
+      3.Run npm init to intialize new npm project (npm is a package manager to install the tools we need)
+         on terminal >> "npm init"
+      4.Run truffle init (to intialize truffle framwork which used to develope used and deploy contracts)
+         on terminal >> "truffle init"      
+      5.Open this folder in a code editor (e.g. Visual Studio Code)
+      6.Install Solidity plugin (e.g. solidity by Juan Blanco [juanblanco.solidity])
+
+   
+   Inside this folder:
+     There are 3 folders and 2 files (generated automatically by Truffle)
+      1. contracts/ : (Directory for Solidity contracts)
+           1.1. Migrations.sol :  (migration contract: tracking the id of last migration )
+      2. migrations/ : (Directory for scriptable deployment files)
+         (the process of deploying contracts in production or local or test environment)
+           2.1. 1_initial_migration.js:  (migration file: deploying the Migration.sol contract)
+      3. test/ : (Directory for test files for testing your application and contracts)
+      4. package.json : (package manager)
+      5. truffle-config.js : (Truffle configuration file)
+
+      *check the figure  truffleProject.jpg 
+
+   Adding our Contracts to Contrcat folder:
+      we will start by adding new contract (e.g. helloWorld.sol) under contrcats folder, 
+      in which we write our code.
+   
+   Compiling the contract:
+      after writing our code, we compile it from the terminal by typing "truffle compile"
+      we need to open terminal in the code editor >> on terminal >> "truffle compile"
+      
+      Note: we need to switch the terminal from PowerShell to Command Prompt (cmd)
+   
+   Deploying the contract:
+      create migration file for our new contract: e.g. 2_helloWorld_migration.js
+      copy all from 1_initial_migration.js and paste it in 2_helloWorld_migration.js 
+      (change the contract name in the code)
+
+      then, we need to deploy the contract to a virtual machine (EVM) hosted locally.
+      on Terminal >> "truffle develop"
+      then we run migrate
+      on Terminal >> "migrate" 
+   
+   Interact with the Contract:
+         on Terminal | truffle(develop)> let instance = await helloWorld.deployed()    (contrcat name)
+         then will get "undefined"
+         then, 
+         on Terminal | truffle(develop)> instance
+         then,
+         on Terminal | truffle(develop)> instance.hello()     (the function you want to run)
+   
+      Interact with the Get Function:
+         on Terminal | truffle(develop)> instance.Getter()                 
+         (Get function is a Call only - it is not committing anything to the blockchain)
+      Interact with the Set Function:
+         on Terminal | truffle(develop)> instance.Setter("parameters")     
+         (Set Function is transactions - it will push new parameters to the blockchain)
+         it will not return annything unless we add .call to the end like below
+         on Terminal | truffle(develop)> instance.Setter.call("parameters") 
+         (in this case it is a call not transaction)
+      Interact with the Payable Function:
+         on Terminal | truffle(develop)> instance.Payable("parameters", {value: '1000'})     
+         (Payable Function is transactions)
+
+
+*/
